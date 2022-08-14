@@ -4,7 +4,7 @@
 #
 Name     : pypi-cryptography_vectors
 Version  : 37.0.4
-Release  : 111
+Release  : 112
 URL      : https://files.pythonhosted.org/packages/72/5a/8ceaa6622b7371cb80725de3e2aa4017562868a9d0d32578c8187aa6f266/cryptography_vectors-37.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/72/5a/8ceaa6622b7371cb80725de3e2aa4017562868a9d0d32578c8187aa6f266/cryptography_vectors-37.0.4.tar.gz
 Summary  : Test vectors for the cryptography package.
