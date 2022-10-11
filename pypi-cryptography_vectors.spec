@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x235AE5F129F9ED98 (paul.l.kehrer@gmail.com)
 #
 Name     : pypi-cryptography_vectors
-Version  : 38.0.1
-Release  : 114
-URL      : https://files.pythonhosted.org/packages/0c/fb/f39bf195f2482096bb26587a6dd1c4d5257a2e51cdf18c8ba87628cbf169/cryptography_vectors-38.0.1.tar.gz
-Source0  : https://files.pythonhosted.org/packages/0c/fb/f39bf195f2482096bb26587a6dd1c4d5257a2e51cdf18c8ba87628cbf169/cryptography_vectors-38.0.1.tar.gz
-Source1  : https://files.pythonhosted.org/packages/0c/fb/f39bf195f2482096bb26587a6dd1c4d5257a2e51cdf18c8ba87628cbf169/cryptography_vectors-38.0.1.tar.gz.asc
+Version  : 38.0.2
+Release  : 115
+URL      : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz
+Source0  : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz
+Source1  : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz.asc
 Summary  : Test vectors for the cryptography package.
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
@@ -51,10 +51,10 @@ python3 components for the pypi-cryptography_vectors package.
 
 
 %prep
-%setup -q -n cryptography_vectors-38.0.1
-cd %{_builddir}/cryptography_vectors-38.0.1
+%setup -q -n cryptography_vectors-38.0.2
+cd %{_builddir}/cryptography_vectors-38.0.2
 pushd ..
-cp -a cryptography_vectors-38.0.1 buildavx2
+cp -a cryptography_vectors-38.0.2 buildavx2
 popd
 
 %build
@@ -62,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1662567892
+export SOURCE_DATE_EPOCH=1665522015
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
