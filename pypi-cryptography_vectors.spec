@@ -6,7 +6,7 @@
 #
 Name     : pypi-cryptography_vectors
 Version  : 38.0.2
-Release  : 116
+Release  : 117
 URL      : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz
 Source1  : https://files.pythonhosted.org/packages/73/e5/5e9b1da5bc023e822b4aff74f4b469f447b0bfba3ef61e07ef35250c53c8/cryptography_vectors-38.0.2.tar.gz.asc
