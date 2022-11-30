@@ -1,5 +1,5 @@
 PKG_NAME := pypi-cryptography_vectors
-URL = https://files.pythonhosted.org/packages/73/ca/13b0bf19069fe9bad734fb17137eb47739da93fffb6924b8696c11d589e1/cryptography_vectors-38.0.3.tar.gz
+URL = https://files.pythonhosted.org/packages/b9/d9/ad7ca180b056e97366597a9fe849f54503e6aed38200d32f3d74fdf32501/cryptography_vectors-38.0.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
