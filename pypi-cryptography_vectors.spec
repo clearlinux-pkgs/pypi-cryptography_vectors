@@ -6,7 +6,7 @@
 #
 Name     : pypi-cryptography_vectors
 Version  : 38.0.4
-Release  : 119
+Release  : 120
 URL      : https://files.pythonhosted.org/packages/b9/d9/ad7ca180b056e97366597a9fe849f54503e6aed38200d32f3d74fdf32501/cryptography_vectors-38.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/b9/d9/ad7ca180b056e97366597a9fe849f54503e6aed38200d32f3d74fdf32501/cryptography_vectors-38.0.4.tar.gz
 Source1  : https://files.pythonhosted.org/packages/b9/d9/ad7ca180b056e97366597a9fe849f54503e6aed38200d32f3d74fdf32501/cryptography_vectors-38.0.4.tar.gz.asc
@@ -17,6 +17,9 @@ Requires: pypi-cryptography_vectors-license = %{version}-%{release}
 Requires: pypi-cryptography_vectors-python = %{version}-%{release}
 Requires: pypi-cryptography_vectors-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+# Suppress stripping binaries
+%define __strip /bin/true
+%define debug_package %{nil}
 
 %description
 ********************************************
@@ -62,12 +65,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1669820236
+export SOURCE_DATE_EPOCH=1672265843
 export GCC_IGNORE_WERROR=1
-export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$FFLAGS -fno-lto "
-export FFLAGS="$FFLAGS -fno-lto "
-export CXXFLAGS="$CXXFLAGS -fno-lto "
+export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CXXFLAGS="$CXXFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
