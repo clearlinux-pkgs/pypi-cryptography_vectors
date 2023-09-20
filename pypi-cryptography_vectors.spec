@@ -4,10 +4,10 @@
 # Using build pattern: pyproject
 #
 Name     : pypi-cryptography_vectors
-Version  : 41.0.3
-Release  : 130
-URL      : https://files.pythonhosted.org/packages/ea/62/c64d18a2387cecbb0be88aeb5568c4f906161d8fc9ae88ea5e67e672ecba/cryptography_vectors-41.0.3.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ea/62/c64d18a2387cecbb0be88aeb5568c4f906161d8fc9ae88ea5e67e672ecba/cryptography_vectors-41.0.3.tar.gz
+Version  : 41.0.4
+Release  : 131
+URL      : https://files.pythonhosted.org/packages/b8/3d/11fdec7a878c9ef85b33961a5b2afeb46bb47ba67ccbaf613bfdbbe2ae34/cryptography_vectors-41.0.4.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b8/3d/11fdec7a878c9ef85b33961a5b2afeb46bb47ba67ccbaf613bfdbbe2ae34/cryptography_vectors-41.0.4.tar.gz
 Summary  : Test vectors for the cryptography package.
 Group    : Development/Tools
 License  : Apache-2.0 BSD-3-Clause
@@ -53,10 +53,10 @@ python3 components for the pypi-cryptography_vectors package.
 
 
 %prep
-%setup -q -n cryptography_vectors-41.0.3
-cd %{_builddir}/cryptography_vectors-41.0.3
+%setup -q -n cryptography_vectors-41.0.4
+cd %{_builddir}/cryptography_vectors-41.0.4
 pushd ..
-cp -a cryptography_vectors-41.0.3 buildavx2
+cp -a cryptography_vectors-41.0.4 buildavx2
 popd
 
 %build
@@ -64,7 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1690988008
+export SOURCE_DATE_EPOCH=1695170766
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
