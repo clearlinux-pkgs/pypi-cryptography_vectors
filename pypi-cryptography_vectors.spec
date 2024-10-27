@@ -7,7 +7,7 @@
 #
 Name     : pypi-cryptography_vectors
 Version  : 43.0.3
-Release  : 148
+Release  : 149
 URL      : https://files.pythonhosted.org/packages/bb/92/7477c23b24e9def731b65540c63bee15e5dd5012a5de6e441f4fb89a46bf/cryptography_vectors-43.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/bb/92/7477c23b24e9def731b65540c63bee15e5dd5012a5de6e441f4fb89a46bf/cryptography_vectors-43.0.3.tar.gz
 Summary  : Test vectors for the cryptography package.
